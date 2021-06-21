@@ -21,7 +21,7 @@ var app = express();
 var assignmentsRouter = require("./routes/assignments");
 
 //MongoDB Local URL
-const DatabaseURL = "mongodb://localhost:27017/lms_react";
+const DatabaseURL = "mongodb://localhost:27017/lms";
 
 // Create MongoDB connection
 mongoose.connect(

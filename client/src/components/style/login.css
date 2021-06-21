@@ -1,0 +1,43 @@
+
+  .login {
+    padding-top: 10px;
+    margin-top: 3%;
+    margin-left: 32%;
+    width: 550px;
+    height: 300px;
+    border-radius: 30px;
+    background-color: rgb(157, 177, 202);
+  }
+  
+  .form-header-login {
+    margin-left: 40%;
+  }
+  
+  .form-login {
+    margin-left: 25%;
+  }
+  
+  .showpassword-login {
+    margin-top: -8%;
+    margin-left: 67.5%;
+  }
+  
+  .forget-password-login {
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 2px 4px 2px 4px;
+  }
+  
+  .forget-password-login:hover {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .button-login {
+    margin-left: 24.5%;
+    width: 100px;
+  }
+  

@@ -1,0 +1,22 @@
+.addassignment {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.toprow-addassignment {
+  margin-bottom: 2%;
+  margin-left: 1%;
+}
+.rows-addassignment {
+  margin-bottom: 2%;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn-addassignment {
+  margin-top: 10%;
+  margin-left: 15px;
+}
