@@ -26,7 +26,11 @@ function App() {
       <Router>
         <Navbar refresh={refresh} />
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route
+            exact
+            path="/"
+            render={(props) => <Home {...props} redirectPage={redirectPage} />}
+          />
           <Route
             exact
             path="/login"

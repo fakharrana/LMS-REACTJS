@@ -75,8 +75,7 @@ const LogIn = (props) => {
               process.env.REACT_APP_USER_DATA,
               JSON.stringify(response.data.user)
             );
-            console.log(   response.data.user)
-            toast.success("Successfully logged in", {
+            toast.success("You are logged in as " + response.data.user.role, {
               position: "top-center",
               autoClose: 3000,
               hideProgressBar: true,

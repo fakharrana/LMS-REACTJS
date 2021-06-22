@@ -6,6 +6,7 @@ const Navbar = (props) => {
   const [refresh, setRefresh] = useState(0);
   const [getLogInStatus, setLogInStatus] = useState("");
   const [getUserRole, setUserRole] = useState("");
+  const [getUserName, setUserName] = useState("");
 
   const history = useHistory();
 
@@ -17,9 +18,11 @@ const Navbar = (props) => {
     );
     setLogInStatus(getstatus);
     if (currentUser !== null) {
+      setUserName(currentUser.name);
       setUserRole(currentUser.role);
     } else {
       setUserRole("");
+      setUserName("");
     }
   }, [refresh, props.refresh]);
 
@@ -52,7 +55,7 @@ const Navbar = (props) => {
             <></>
           )}
 
-          {getUserRole === "Teacher" ? (
+          {getUserRole.toLowerCase() === "teacher" ? (
             <li>
               {" "}
               <Link to="/addassignment">Add Assignment</Link>{" "}
@@ -61,7 +64,7 @@ const Navbar = (props) => {
             <></>
           )}
 
-          {getUserRole === "Student" ? (
+          {getUserRole.toLowerCase() === "student" ? (
             <li>
               {" "}
               <Link to="/viewassignments">View Assignments</Link>{" "}
@@ -74,6 +77,15 @@ const Navbar = (props) => {
             <li>
               {" "}
               <Link onClick={logOut}>Log Out</Link>{" "}
+            </li>
+          ) : (
+            <></>
+          )}
+
+          {getLogInStatus !== null ? (
+            <li>
+              {" "}
+              <Link>Welcome Mr. {getUserName}</Link>{" "}
             </li>
           ) : (
             <></>
